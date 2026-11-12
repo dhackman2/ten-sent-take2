@@ -186,7 +186,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="introduction" class="level1">
 <h1>Introduction</h1>
-<div id="4f8db624" class="cell" data-execution_count="1">
+<div id="ae78175d" class="cell" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
@@ -202,7 +202,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="literature-review" class="level1">
 <h1>Literature Review</h1>
-<p>{{lipsum&gt;}}</p>
 </section>
 <section id="method" class="level1">
 <h1>Method</h1>
@@ -210,7 +209,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="results" class="level1">
 <h1>Results</h1>
-<div id="a7997d08" class="cell" data-execution_count="2">
+<div id="37bbddfc" class="cell" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>corr_val <span class="op">=</span> np.array(df[[<span class="st">'petal_length'</span>, <span class="st">'petal_width'</span>]].corr())[<span class="dv">0</span>][<span class="dv">1</span>]</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> corr_val <span class="op">&gt;</span> <span class="fl">0.8</span>: </span>
@@ -248,12 +247,17 @@ Figure&nbsp;1: A scatterplot of petal length and width
 <section id="discussion" class="level1">
 <h1>Discussion</h1>
 <p>Now that this long-standing problem is resolved (thanks to the diligent efforts of UW-Madison’s DSHB program), they have once again triumphed in establishing that there is a positive correlative relationship between iris petal length and petal width as a matter of empirically certain ground truth.</p>
-<div id="587a1d9e" class="cell" data-execution_count="4">
+<div id="cell-fig-length-width-hexplot" class="cell" data-execution_count="4">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>sns.jointplot(x<span class="op">=</span>df[<span class="st">'petal_width'</span>], y<span class="op">=</span>df[<span class="st">'petal_length'</span>], kind<span class="op">=</span><span class="st">'hex'</span>,  color<span class="op">=</span><span class="st">"#4CB391"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="index_files/figure-html/cell-5-output-1.png" width="522" height="543" class="figure-img"></p>
+<div id="fig-length-width-hexplot" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-length-width-hexplot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="index_files/figure-html/fig-length-width-hexplot-output-1.png" width="522" height="543" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-length-width-hexplot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: A hexplot of petal length and width
+</figcaption>
 </figure>
 </div>
 </div>
