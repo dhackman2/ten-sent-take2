@@ -70,6 +70,7 @@ As shown in @gif-length-width-scatter we see additional evidence of a strong pos
 Now that this long-standing problem is resolved (thanks to the diligent efforts of UW-Madison's DSHB program), they have once again triumphed in establishing that there is a positive correlative relationship between iris petal length and petal width as a matter of empirically certain ground truth.
 
 ```{python}
+#| fig-cap: "A hexplot of petal length and width"
 sns.jointplot(x=df['petal_width'], y=df['petal_length'], kind='hex',  color="#4CB391")
 
 ```
