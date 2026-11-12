@@ -23,7 +23,7 @@ The students of UW-Madison DSHB program is interested in learning about the corr
 `{python} f"{len(df)}"` flowers.
 
 # Literature Review
-{{lipsum}}
+
 
 # Method
 Given that we have two columns of continuous data (length of petal and width of petal measured in millimeters. We will evaluate this relationship using simple correlation analysis and also a scatterplot. These two methods are classic and traditional starting points when evaluating data like these
